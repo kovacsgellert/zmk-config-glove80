@@ -70,6 +70,21 @@
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 22 23 24 25 26 34 35 36 37 38 46 47 48 49 50 64 65 66 67 68 15 27 39 51>;
             hold-trigger-on-release;
         };
+        
+        // Acute
+        hu_a: hungarian_a { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_acute_a>, <&m_acute_A_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        hu_e: hungarian_e { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_acute_e>, <&m_acute_E_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        hu_i: hungarian_i { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_acute_i>, <&m_acute_I_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        hu_o: hungarian_o { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_acute_o>, <&m_acute_O_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        hu_u: hungarian_u { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_acute_u>, <&m_acute_U_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+
+        // Diaeresis (Umlaut)
+        hu_oe: hungarian_oe { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_dia_o>, <&m_dia_O_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        hu_ue: hungarian_ue { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_dia_u>, <&m_dia_U_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+
+        // Double Acute
+        hu_od: hungarian_od { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_dac_o>, <&m_dac_O_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        hu_ud: hungarian_ud { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_dac_u>, <&m_dac_U_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
     };
 
     macros {
@@ -107,6 +122,46 @@
             #binding-cells = <0>;
             bindings = <&out OUT_BLE &bt BT_SEL 3>;
         };
+        
+        // --- ACUTE ACCENTS (á, é, í, ó, ú) ---
+        // Sequence: RALT -> Apostrophe (') -> Letter
+        
+        // Lowercase
+        m_acute_a: m_acute_a { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &kp RALT &kp APOS &kp A>; };
+        m_acute_e: m_acute_e { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &kp RALT &kp APOS &kp E>; };
+        m_acute_i: m_acute_i { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &kp RALT &kp APOS &kp I>; };
+        m_acute_o: m_acute_o { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &kp RALT &kp APOS &kp O>; };
+        m_acute_u: m_acute_u { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &kp RALT &kp APOS &kp U>; };
+
+        // Uppercase (Safely releases shift first)
+        m_acute_A_cap: m_acute_A_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_release &kp LSHFT &kp RSHFT>, <&macro_tap &kp RALT &kp APOS &kp LS(A)>; };
+        m_acute_E_cap: m_acute_E_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_release &kp LSHFT &kp RSHFT>, <&macro_tap &kp RALT &kp APOS &kp LS(E)>; };
+        m_acute_I_cap: m_acute_I_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_release &kp LSHFT &kp RSHFT>, <&macro_tap &kp RALT &kp APOS &kp LS(I)>; };
+        m_acute_O_cap: m_acute_O_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_release &kp LSHFT &kp RSHFT>, <&macro_tap &kp RALT &kp APOS &kp LS(O)>; };
+        m_acute_U_cap: m_acute_U_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_release &kp LSHFT &kp RSHFT>, <&macro_tap &kp RALT &kp APOS &kp LS(U)>; };
+
+
+        // --- DIAERESIS / UMLAUT (ö, ü) ---
+        // Sequence: RALT -> Quote (") -> Letter
+        // Note: Since Quote is Shift+', we actually WANT Shift for the punctuation here.
+        
+        m_dia_o: m_dia_o { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &kp RALT &kp DQT &kp O>; };
+        m_dia_u: m_dia_u { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &kp RALT &kp DQT &kp U>; };
+        
+        // For caps, we rely on the user holding shift, but we hardcode LS(O) to be safe
+        m_dia_O_cap: m_dia_O_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &kp RALT &kp DQT &kp LS(O)>; };
+        m_dia_U_cap: m_dia_U_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &kp RALT &kp DQT &kp LS(U)>; };
+
+
+        // --- DOUBLE ACUTE (ő, ű) ---
+        // Sequence: RALT -> Equal (=) -> Letter
+        // Note: If shift is held, (=) becomes (+), so we must release shift for caps.
+
+        m_dac_o: m_dac_o { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &kp RALT &kp EQUAL &kp O>; };
+        m_dac_u: m_dac_u { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &kp RALT &kp EQUAL &kp U>; };
+
+        m_dac_O_cap: m_dac_O_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_release &kp LSHFT &kp RSHFT>, <&macro_tap &kp RALT &kp EQUAL &kp LS(O)>; };
+        m_dac_U_cap: m_dac_U_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_release &kp LSHFT &kp RSHFT>, <&macro_tap &kp RALT &kp EQUAL &kp LS(U)>; };
     };
 
     keymap {
