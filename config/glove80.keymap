@@ -409,7 +409,15 @@
             wait-ms = <30>;
             tap-ms = <30>;
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LALT>, <&macro_tap &kp E>, <&macro_release &kp LALT>, <&macro_tap &kp A>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp E>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp A>;
         };
 
         m_mac_acute_e: m_mac_acute_e {
@@ -417,7 +425,15 @@
             wait-ms = <30>;
             tap-ms = <30>;
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LALT>, <&macro_tap &kp E>, <&macro_release &kp LALT>, <&macro_tap &kp E>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp E>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp E>;
         };
 
         m_mac_acute_i: m_mac_acute_i {
@@ -425,7 +441,15 @@
             wait-ms = <30>;
             tap-ms = <30>;
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LALT>, <&macro_tap &kp E>, <&macro_release &kp LALT>, <&macro_tap &kp I>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp E>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp I>;
         };
 
         m_mac_acute_o: m_mac_acute_o {
@@ -433,7 +457,15 @@
             wait-ms = <30>;
             tap-ms = <30>;
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LALT>, <&macro_tap &kp E>, <&macro_release &kp LALT>, <&macro_tap &kp O>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp E>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp O>;
         };
 
         m_mac_acute_u: m_mac_acute_u {
@@ -441,7 +473,15 @@
             wait-ms = <30>;
             tap-ms = <30>;
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LALT>, <&macro_tap &kp E>, <&macro_release &kp LALT>, <&macro_tap &kp U>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp E>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp U>;
         };
 
         m_mac_acute_A_cap: m_mac_acute_A_cap {
@@ -449,7 +489,17 @@
             wait-ms = <30>;
             tap-ms = <30>;
             #binding-cells = <0>;
-            bindings = <&macro_release>, <&kp LSHFT &kp RSHFT>, <&macro_press &kp LALT>, <&macro_tap &kp E>, <&macro_release &kp LALT>, <&macro_tap &kp LS(A)>;
+            bindings =
+                <&macro_release>,
+                <&kp LSHFT &kp RSHFT>,
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp E>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp LS(A)>;
         };
 
         m_mac_acute_E_cap: m_mac_acute_E_cap {
@@ -457,7 +507,17 @@
             wait-ms = <30>;
             tap-ms = <30>;
             #binding-cells = <0>;
-            bindings = <&macro_release>, <&kp LSHFT &kp RSHFT>, <&macro_press &kp LALT>, <&macro_tap &kp E>, <&macro_release &kp LALT>, <&macro_tap &kp LS(E)>;
+            bindings =
+                <&macro_release>,
+                <&kp LSHFT &kp RSHFT>,
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp E>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp LS(E)>;
         };
 
         m_mac_acute_I_cap: m_mac_acute_I_cap {
@@ -465,7 +525,17 @@
             wait-ms = <30>;
             tap-ms = <30>;
             #binding-cells = <0>;
-            bindings = <&macro_release>, <&kp LSHFT &kp RSHFT>, <&macro_press &kp LALT>, <&macro_tap &kp E>, <&macro_release &kp LALT>, <&macro_tap &kp LS(I)>;
+            bindings =
+                <&macro_release>,
+                <&kp LSHFT &kp RSHFT>,
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp E>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp LS(I)>;
         };
 
         m_mac_acute_O_cap: m_mac_acute_O_cap {
@@ -473,7 +543,17 @@
             wait-ms = <30>;
             tap-ms = <30>;
             #binding-cells = <0>;
-            bindings = <&macro_release>, <&kp LSHFT &kp RSHFT>, <&macro_press &kp LALT>, <&macro_tap &kp E>, <&macro_release &kp LALT>, <&macro_tap &kp LS(O)>;
+            bindings =
+                <&macro_release>,
+                <&kp LSHFT &kp RSHFT>,
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp E>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp LS(O)>;
         };
 
         m_mac_acute_U_cap: m_mac_acute_U_cap {
@@ -481,7 +561,17 @@
             wait-ms = <30>;
             tap-ms = <30>;
             #binding-cells = <0>;
-            bindings = <&macro_release>, <&kp LSHFT &kp RSHFT>, <&macro_press &kp LALT>, <&macro_tap &kp E>, <&macro_release &kp LALT>, <&macro_tap &kp LS(U)>;
+            bindings =
+                <&macro_release>,
+                <&kp LSHFT &kp RSHFT>,
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp E>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp LS(U)>;
         };
 
         m_mac_dia_o: m_mac_dia_o {
@@ -489,7 +579,15 @@
             wait-ms = <30>;
             tap-ms = <30>;
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LALT>, <&macro_tap &kp U>, <&macro_release &kp LALT>, <&macro_tap &kp O>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp U>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp O>;
         };
 
         m_mac_dia_u: m_mac_dia_u {
@@ -497,7 +595,15 @@
             wait-ms = <30>;
             tap-ms = <30>;
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LALT>, <&macro_tap &kp U>, <&macro_release &kp LALT>, <&macro_tap &kp U>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp U>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp U>;
         };
 
         m_mac_dia_O_cap: m_mac_dia_O_cap {
@@ -505,7 +611,17 @@
             wait-ms = <30>;
             tap-ms = <30>;
             #binding-cells = <0>;
-            bindings = <&macro_release>, <&kp LSHFT &kp RSHFT>, <&macro_press &kp LALT>, <&macro_tap &kp U>, <&macro_release &kp LALT>, <&macro_tap &kp LS(O)>;
+            bindings =
+                <&macro_release>,
+                <&kp LSHFT &kp RSHFT>,
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp U>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp LS(O)>;
         };
 
         m_mac_dia_U_cap: m_mac_dia_U_cap {
@@ -513,7 +629,17 @@
             wait-ms = <30>;
             tap-ms = <30>;
             #binding-cells = <0>;
-            bindings = <&macro_release>, <&kp LSHFT &kp RSHFT>, <&macro_press &kp LALT>, <&macro_tap &kp U>, <&macro_release &kp LALT>, <&macro_tap &kp LS(U)>;
+            bindings =
+                <&macro_release>,
+                <&kp LSHFT &kp RSHFT>,
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp U>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp LS(U)>;
         };
 
         m_mac_dac_o: m_mac_dac_o {
@@ -521,7 +647,15 @@
             wait-ms = <30>;
             tap-ms = <30>;
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LALT>, <&macro_tap &kp J>, <&macro_release &kp LALT>, <&macro_tap &kp O>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp J>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp O>;
         };
 
         m_mac_dac_u: m_mac_dac_u {
@@ -529,7 +663,15 @@
             wait-ms = <30>;
             tap-ms = <30>;
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LALT>, <&macro_tap &kp J>, <&macro_release &kp LALT>, <&macro_tap &kp U>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp J>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp U>;
         };
 
         m_mac_dac_O_cap: m_mac_dac_O_cap {
@@ -537,7 +679,17 @@
             wait-ms = <30>;
             tap-ms = <30>;
             #binding-cells = <0>;
-            bindings = <&macro_release>, <&kp LSHFT &kp RSHFT>, <&macro_press &kp LALT>, <&macro_tap &kp J>, <&macro_release &kp LALT>, <&macro_tap &kp LS(O)>;
+            bindings =
+                <&macro_release>,
+                <&kp LSHFT &kp RSHFT>,
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp J>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp LS(O)>;
         };
 
         m_mac_dac_U_cap: m_mac_dac_U_cap {
@@ -545,7 +697,17 @@
             wait-ms = <30>;
             tap-ms = <30>;
             #binding-cells = <0>;
-            bindings = <&macro_release>, <&kp LSHFT &kp RSHFT>, <&macro_press &kp LALT>, <&macro_tap &kp J>, <&macro_release &kp LALT>, <&macro_tap &kp LS(U)>;
+            bindings =
+                <&macro_release>,
+                <&kp LSHFT &kp RSHFT>,
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp J>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp LS(U)>;
         };
     };
 
@@ -562,12 +724,12 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | ENTER | DEL   |      | | BSPC  | SPACE |      |      |  DOWN |  UP   |  [   |   ]   |      |
 
             bindings = <
-&kp F1      &kp F2       &kp F3       &kp F4        &kp F5                                                                                                  &kp F6          &kp F7        &kp F8       &kp F9                   &kp F10
-&kp GRAVE   &kp N1       &kp N2       &kp N3        &kp N4         &kp N5                                                                           &kp N6  &kp N7          &kp N8        &kp N9       &kp N0                   &kp MINUS
-&kp TAB     &kp Q        &kp W        &kp E         &kp R          &kp T                                                                            &kp Y   &kp U           &kp I         &kp O        &kp P                    &kp BSLH
-&kp ESC     &hml LALT A  &hml LWIN S  &hml LCTRL D  &hml LSHIFT F  &kp G                                                                            &kp H   &hmr RSHIFT J   &hmr RCTRL K  &hmr RWIN L  &hmr LEFT_ALT SEMICOLON  &kp SQT
-&kp LSHFT   &kp Z        &kp X        &kp C         &kp V          &kp B   &none        &none      &kp PRINTSCREEN  &kp LWIN  &none           &none        &kp N   &kp M           &kp COMMA     &kp DOT      &kp FSLH                 &kp EQUAL
-            &magic MAGIC 0  &kp HOME     &kp END      &kp LEFT      &kp RIGHT              &lt NAV_HUN RET  &kp DEL  &none            &none     &kp BACKSPACE  &kp SPACE          &kp DOWN_ARROW  &kp UP_ARROW  &kp LBKT     &kp RBKT                 &none
+&kp F1          &kp F2       &kp F3       &kp F4        &kp F5                                                                                                          &kp F6          &kp F7        &kp F8       &kp F9                   &none
+&kp GRAVE       &kp N1       &kp N2       &kp N3        &kp N4         &kp N5                                                                                   &kp N6  &kp N7          &kp N8        &kp N9       &kp N0                   &kp MINUS
+&kp TAB         &kp Q        &kp W        &kp E         &kp R          &kp T                                                                                    &kp Y   &kp U           &kp I         &kp O        &kp P                    &kp BSLH
+&kp ESC         &hml LALT A  &hml LWIN S  &hml LCTRL D  &hml LSHIFT F  &kp G                                                                                    &kp H   &hmr RSHIFT J   &hmr RCTRL K  &hmr RWIN L  &hmr LEFT_ALT SEMICOLON  &kp SQT
+&kp LSHFT       &kp Z        &kp X        &kp C         &kp V          &kp B   &kp LSHIFT       &kp LCTRL  &kp LWIN  &kp F10          &kp F11        &kp F12    &kp N   &kp M           &kp COMMA     &kp DOT      &kp FSLH                 &kp EQUAL
+&magic MAGIC 0  &kp HOME     &kp END      &kp LEFT      &kp RIGHT              &lt NAV_HUN RET  &kp DEL    &kp LALT  &kp PRINTSCREEN  &kp BACKSPACE  &kp SPACE          &kp DOWN_ARROW  &kp UP_ARROW  &kp LBKT     &kp RBKT                 &none
             >;
         };
 
@@ -606,18 +768,18 @@
 
         default_mac_layer {
             bindings = <
-&kp F1      &kp F2       &kp F3       &kp F4        &kp F5                                                                                                  &kp F6          &kp F7        &kp F8       &kp F9                   &kp F10
-&kp GRAVE   &kp N1       &kp N2       &kp N3        &kp N4         &kp N5                                                                           &kp N6  &kp N7          &kp N8        &kp N9       &kp N0                   &kp MINUS
-&kp TAB     &kp Q        &kp W        &kp E         &kp R          &kp T                                                                            &kp Y   &kp U           &kp I         &kp O        &kp P                    &kp BSLH
-&kp ESC     &hml LALT A  &hml LWIN S  &hml LCTRL D  &hml LSHIFT F  &kp G                                                                            &kp H   &hmr RSHIFT J   &hmr RCTRL K  &hmr RWIN L  &hmr LEFT_ALT SEMICOLON  &kp SQT
-&kp LSHFT   &kp Z        &kp X        &kp C         &kp V          &kp B   &none        &none      &kp PRINTSCREEN  &kp LWIN  &none           &none        &kp N   &kp M           &kp COMMA     &kp DOT      &kp FSLH                 &kp EQUAL
-&magic MAGIC 0  &kp HOME     &kp END      &kp LEFT      &kp RIGHT              &lt NAV_HUN_MAC RET  &kp DEL  &none            &none     &kp BACKSPACE  &kp SPACE          &kp DOWN_ARROW  &kp UP_ARROW  &kp LBKT     &kp RBKT                 &none
+&kp F1          &kp F2       &kp F3       &kp F4        &kp F5                                                                                                                   &kp F6          &kp F7        &kp F8       &kp F9                   &none
+&kp GRAVE       &kp N1       &kp N2       &kp N3        &kp N4         &kp N5                                                                                            &kp N6  &kp N7          &kp N8        &kp N9       &kp N0                   &kp MINUS
+&kp TAB         &kp Q        &kp W        &kp E         &kp R          &kp T                                                                                             &kp Y   &kp U           &kp I         &kp O        &kp P                    &kp BSLH
+&kp ESC         &hml LALT A  &hml LWIN S  &hml LCTRL D  &hml LSHIFT F  &kp G                                                                                             &kp H   &hmr RSHIFT J   &hmr RCTRL K  &hmr RWIN L  &hmr LEFT_ALT SEMICOLON  &kp SQT
+&kp LSHFT       &kp Z        &kp X        &kp C         &kp V          &kp B   &kp LSHFT            &kp LCTRL  &kp LWIN  &kp F10               &kp F11        &kp F12    &kp N   &kp M           &kp COMMA     &kp DOT      &kp FSLH                 &kp EQUAL
+&magic MAGIC 0  &kp HOME     &kp END      &kp LEFT      &kp RIGHT              &lt NAV_HUN_MAC RET  &kp DEL    &kp LALT  &kp LG(LS(NUMBER_4))  &kp BACKSPACE  &kp SPACE          &kp DOWN_ARROW  &kp UP_ARROW  &kp LBKT     &kp RBKT                 &none
             >;
         };
 
         nav_hun_mac {
             bindings = <
-&none  &none     &none     &none      &none                                                                         &none           &none         &none            &none   &none
+&none  &none     &none     &none      &none                                                                         &none           &none         &none            &none       &none
 &none  &none     &none     &none      &none      &none                                              &none           &none           &none         &none            &hu_oe_mac  &hu_ue_mac
 &none  &none     &none     &hu_e_mac  &none      &none                                              &none           &hu_u_mac       &hu_i_mac     &hu_o_mac        &hu_od_mac  &hu_ud_mac
 &none  &kp LALT  &kp LWIN  &kp LCTRL  &kp LSHFT  &none                                              &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &hu_e_mac   &hu_a_mac
