@@ -404,7 +404,6 @@
 
         // --- MAC HUNGARIAN (U.S. Extended) ---
         // Uses macOS dead keys: Option+E (acute), Option+U (umlaut), Option+J (double acute).
-        // Caps path: unshifted dead key, then &caps_word, then explicit LS(base).
 
         m_mac_acute_a: m_mac_acute_a {
             compatible = "zmk,behavior-macro";
@@ -501,8 +500,6 @@
                 <&macro_release>,
                 <&kp LALT>,
                 <&macro_tap>,
-                <&caps_word>,
-                <&macro_tap>,
                 <&kp LS(A)>;
         };
 
@@ -520,8 +517,6 @@
                 <&kp E>,
                 <&macro_release>,
                 <&kp LALT>,
-                <&macro_tap>,
-                <&caps_word>,
                 <&macro_tap>,
                 <&kp LS(E)>;
         };
@@ -541,8 +536,6 @@
                 <&macro_release>,
                 <&kp LALT>,
                 <&macro_tap>,
-                <&caps_word>,
-                <&macro_tap>,
                 <&kp LS(I)>;
         };
 
@@ -561,8 +554,6 @@
                 <&macro_release>,
                 <&kp LALT>,
                 <&macro_tap>,
-                <&caps_word>,
-                <&macro_tap>,
                 <&kp LS(O)>;
         };
 
@@ -580,8 +571,6 @@
                 <&kp E>,
                 <&macro_release>,
                 <&kp LALT>,
-                <&macro_tap>,
-                <&caps_word>,
                 <&macro_tap>,
                 <&kp LS(U)>;
         };
@@ -633,8 +622,6 @@
                 <&macro_release>,
                 <&kp LALT>,
                 <&macro_tap>,
-                <&caps_word>,
-                <&macro_tap>,
                 <&kp LS(O)>;
         };
 
@@ -652,8 +639,6 @@
                 <&kp U>,
                 <&macro_release>,
                 <&kp LALT>,
-                <&macro_tap>,
-                <&caps_word>,
                 <&macro_tap>,
                 <&kp LS(U)>;
         };
@@ -705,8 +690,6 @@
                 <&macro_release>,
                 <&kp LALT>,
                 <&macro_tap>,
-                <&caps_word>,
-                <&macro_tap>,
                 <&kp LS(O)>;
         };
 
@@ -724,8 +707,6 @@
                 <&kp J>,
                 <&macro_release>,
                 <&kp LALT>,
-                <&macro_tap>,
-                <&caps_word>,
                 <&macro_tap>,
                 <&kp LS(U)>;
         };
@@ -758,7 +739,7 @@
 
         magic_layer {
             bindings = <
-&bt BT_CLR   &to DEFAULT_MAC  &to DEFAULT  &caps_word            &none                                                                                     &none  &none  &none  &none  &bt BT_CLR_ALL
+&bt BT_CLR   &to DEFAULT_MAC  &to DEFAULT  &none            &none                                                                                     &none  &none  &none  &none  &bt BT_CLR_ALL
 &none        &none            &none            &none            &none            &none                                                             &none  &none  &none  &none  &none  &none
 &none        &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                   &none  &none  &none  &none  &none  &none
 &bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                   &none  &none  &none  &none  &none  &bootloader
